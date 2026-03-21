@@ -1,0 +1,107 @@
+import {useEffect, useRef} from "react";
+
+const projects = [
+    {
+        img: require("../img/tkani.png"),
+        title: "E-commerce платформа",
+        desc: "Полноценный интернет-магазин с корзиной, оплатой и адаптивным дизайном.",
+        tech: ["Deno", "TypeScript"],
+        link: "https://tkanievents.ru/"
+    },
+    {
+        img: require("../img/digital.png"),
+        title: "Сайт-презентация",
+        desc: "Концепт сайта-презентации отчёта для конференции с визуализацией статистики, анимированными графиками и слайдовой структурой. Проект создан для портфолио с целью показать навыки работы с React, анимациями и визуализацией данных.",
+        tech: ["React", "Tailwind", "Rechart"],
+        link: "http://localhost:5173/"
+    },
+    {
+        img: require("../img/store.jpg"),
+        title: "Витрина цифровых товаров",
+        desc: "Учебный проект для удобного представления цифровых товаров, обеспечивающее быстрый поиск и навигацию среди большого количества предложений.",
+        tech: ["Drogon C++", "Tailwind", "Astro", "Svelte", "Postgres"],
+        link: "https://github.com/Increasse/course-practice"
+    },
+    {
+        img: require("../img/weather.png"),
+        title: "Weather App",
+        desc: "Интерактивное React-приложение для отслеживания погоды. Реализован поиск городов с валидацией, интеграция с OpenWeatherMap API, динамические рекомендации активностей на основе метеоданных.",
+        tech: ["JS", "React", "API"],
+        link: "https://github.com/Increasse/weather-app"
+    },
+    {
+        img: require("../img/taskflow.jpg"),
+        title: "TaskFlow",
+        desc: "Приложение для работы с задачами и Kanban-доска с Drag&Drop механикой. ",
+        tech: ["TS", "React", "Tailwind", "Zustand"],
+        link: "https://github.com/Increasse/taskflow"
+    },
+    {
+        img: require("../img/symphony.jpg"),
+        title: "GitHub Symphony",
+        desc: "Интерактивное веб-приложение, которое анализирует историю коммитов GitHub-репозитория и преобразует её в музыкально-визуальную симфонию.",
+        tech: ["TS", "React", "Tailwind", "Zustand", "API"],
+        link: "https://github.com/Increasse/github-symphony"
+    },
+]
+
+export default function Projects() {
+    const bgRef = useRef(null);
+
+    useEffect(() => {
+        if (!bgRef.current) return;
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('expanded');
+                }
+                else {
+                  entry.target.classList.remove('expanded');
+                }
+            },
+            {
+                threshold: 0.2,
+                rootMargin: '0px 0px -15% 0px'
+            }
+        );
+
+        observer.observe(bgRef.current);
+
+        return () => observer.disconnect();
+    }, []);
+
+    return (
+        <section id="projects">
+            <div className="projects-bg" ref={bgRef} />
+
+            <div className="projects-content">
+                <h2 className="section-title">Примеры работ</h2>
+
+                <div className="projects-container">
+                    {projects.map((project, i) => (
+                        <div key={i} className="project-item">
+                            <div className="project-img">
+                                <img src={project.img} alt=""/>
+                            </div>
+                            <div className="project-main">
+                                <div>
+                                    <h3 className="project-title">{project.title}</h3>
+                                    <p className="project-desc">{project.desc}</p>
+                                </div>
+                                <div>
+                                    <div className="project-tech">
+                                        {project.tech.map(t => <span key={t}>{t}</span>)}
+                                    </div>
+                                    <a href={project.link} className="project-link" target="_blank" rel="noopener noreferrer">
+                                        Посмотреть проект →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+}
