@@ -1,5 +1,3 @@
-import {useEffect, useRef} from "react";
-
 const projects = [
     {
         img: require("../img/tkani.png"),
@@ -46,34 +44,9 @@ const projects = [
 ]
 
 export default function Projects() {
-    const bgRef = useRef(null);
-
-    useEffect(() => {
-        if (!bgRef.current) return;
-
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('expanded');
-                }
-                else {
-                  entry.target.classList.remove('expanded');
-                }
-            },
-            {
-                threshold: 0.2,
-                rootMargin: '0px 0px -15% 0px'
-            }
-        );
-
-        observer.observe(bgRef.current);
-
-        return () => observer.disconnect();
-    }, []);
 
     return (
         <section id="projects">
-            <div className="projects-bg" ref={bgRef} />
 
             <div className="projects-content">
                 <h2 className="section-title">Примеры работ</h2>
@@ -93,7 +66,8 @@ export default function Projects() {
                                     <div className="project-tech">
                                         {project.tech.map(t => <span key={t}>{t}</span>)}
                                     </div>
-                                    <a href={project.link} className="project-link" target="_blank" rel="noopener noreferrer">
+                                    <a href={project.link} className="project-link" target="_blank"
+                                       rel="noopener noreferrer">
                                         Посмотреть проект →
                                     </a>
                                 </div>
