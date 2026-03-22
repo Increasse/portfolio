@@ -11,7 +11,7 @@ const projects = [
         title: "Сайт-презентация",
         desc: "Концепт сайта-презентации отчёта для конференции с визуализацией статистики, анимированными графиками и слайдовой структурой. Проект создан для портфолио с целью показать навыки работы с React, анимациями и визуализацией данных.",
         tech: ["React", "Tailwind", "Rechart"],
-        link: "http://localhost:5173/"
+        link: "http://github.com/Increasse/conference-pres/"
     },
     {
         img: require("../img/store.jpg"),
