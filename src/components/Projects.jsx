@@ -11,7 +11,7 @@ const projects = [
         title: "Сайт-презентация",
         desc: "Концепт сайта-презентации отчёта для конференции с визуализацией статистики, анимированными графиками и слайдовой структурой. Проект создан для портфолио с целью показать навыки работы с React, анимациями и визуализацией данных.",
         tech: ["React", "Tailwind", "Rechart"],
-        link: "http://github.com/Increasse/conference-pres/"
+        link: "https://increasse.github.io/conference-pres/"
     },
     {
         img: require("../img/store.jpg"),
@@ -25,14 +25,14 @@ const projects = [
         title: "TaskFlow",
         desc: "Приложение для работы с задачами и Kanban-доска с Drag&Drop механикой. ",
         tech: ["TS", "React", "Tailwind", "Zustand"],
-        link: "https://github.com/Increasse/taskflow"
+        link: "https://increasse.github.io/conference-pres/"
     },
     {
         img: require("../img/symphony.jpg"),
         title: "GitHub Symphony",
         desc: "Интерактивное веб-приложение, которое анализирует историю коммитов GitHub-репозитория и преобразует её в музыкально-визуальную симфонию.",
         tech: ["TS", "React", "Tailwind", "Zustand", "API"],
-        link: "https://github.com/Increasse/github-symphony"
+        link: "https://increasse.github.io/conference-pres/"
     },
 ]
 
