@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.a6eac86b.css",
-    "main.js": "/portfolio/static/js/main.12502726.js",
+    "main.js": "/portfolio/static/js/main.c38f6cf3.js",
     "static/js/453.635f5f07.chunk.js": "/portfolio/static/js/453.635f5f07.chunk.js",
     "static/media/bauman.jpg": "/portfolio/static/media/bauman.a69bd02dad3431edb1ae.jpg",
     "static/media/digital.png": "/portfolio/static/media/digital.4074db5449e611fa2454.png",
@@ -10,18 +10,17 @@
     "static/media/baumantech.jpg": "/portfolio/static/media/baumantech.32364651203926516069.jpg",
     "static/media/store.jpg": "/portfolio/static/media/store.25be73a56ae97f8ff345.jpg",
     "static/media/taskflow.jpg": "/portfolio/static/media/taskflow.c317765e937c51854f1e.jpg",
-    "static/media/weather.png": "/portfolio/static/media/weather.2dc762e0f803907483c3.png",
     "static/media/telegram.png": "/portfolio/static/media/telegram.1b722a57c2ce8ff2980a.png",
     "static/media/symphony.jpg": "/portfolio/static/media/symphony.41b5aca1303360520aa9.jpg",
     "static/media/github.png": "/portfolio/static/media/github.d05d06a0596dcdaf48f2.png",
     "static/media/mail.png": "/portfolio/static/media/mail.2c378c9ee25927123f7d.png",
     "index.html": "/portfolio/index.html",
     "main.a6eac86b.css.map": "/portfolio/static/css/main.a6eac86b.css.map",
-    "main.12502726.js.map": "/portfolio/static/js/main.12502726.js.map",
+    "main.c38f6cf3.js.map": "/portfolio/static/js/main.c38f6cf3.js.map",
     "453.635f5f07.chunk.js.map": "/portfolio/static/js/453.635f5f07.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a6eac86b.css",
-    "static/js/main.12502726.js"
+    "static/js/main.c38f6cf3.js"
   ]
 }
