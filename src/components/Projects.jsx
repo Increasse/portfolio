@@ -25,14 +25,14 @@ const projects = [
         title: "TaskFlow",
         desc: "Приложение для работы с задачами и Kanban-доска с Drag&Drop механикой. ",
         tech: ["TS", "React", "Tailwind", "Zustand"],
-        link: "https://increasse.github.io/conference-pres/"
+        link: "https://increasse.github.io/taskflow/"
     },
     {
         img: require("../img/symphony.jpg"),
         title: "GitHub Symphony",
         desc: "Интерактивное веб-приложение, которое анализирует историю коммитов GitHub-репозитория и преобразует её в музыкально-визуальную симфонию.",
         tech: ["TS", "React", "Tailwind", "Zustand", "API"],
-        link: "https://increasse.github.io/conference-pres/"
+        link: "https://increasse.github.io/github-symphony/"
     },
 ]
 
