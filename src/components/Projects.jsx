@@ -21,13 +21,6 @@ const projects = [
         link: "https://github.com/Increasse/course-practice"
     },
     {
-        img: require("../img/weather.png"),
-        title: "Weather App",
-        desc: "Интерактивное React-приложение для отслеживания погоды. Реализован поиск городов с валидацией, интеграция с OpenWeatherMap API, динамические рекомендации активностей на основе метеоданных.",
-        tech: ["JS", "React", "API"],
-        link: "https://github.com/Increasse/weather-app"
-    },
-    {
         img: require("../img/taskflow.jpg"),
         title: "TaskFlow",
         desc: "Приложение для работы с задачами и Kanban-доска с Drag&Drop механикой. ",
